@@ -47,8 +47,12 @@ def RaxxlaCoordHunt():
   
   json = r.json()
   
+  sy = []
   for system in json:
-    print(system['name'])
+    sy.append(system["name"])
+  
+  for name in sorted(sy):
+    print(name)
     
   print(len(json))
 
